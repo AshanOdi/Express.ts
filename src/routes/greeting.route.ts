@@ -1,5 +1,4 @@
 import { Router,Request,Response } from "express";
-import "routes";
 
 export class GreetingRoute{
     private static instance:GreetingRoute;
