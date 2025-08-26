@@ -1,5 +1,5 @@
 import { Router } from "express";
-import greetingRoute from "./greeting.route";
+import { GreetingRoute } from "./greeting.route";
 
 export class Routes{
     public router:Router;
@@ -15,9 +15,12 @@ export class Routes{
 
     private constructor(){
         this.router = Router();
+        this.setupRoutes();
     }
+
     setupRoutes(){
-        this.router.use("/greeting", greetingRoute);
+        this.router.use("/greetig",GreetingRoute.getInstance().router);
     }
+    
 
 }
