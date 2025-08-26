@@ -1,4 +1,4 @@
-export const Error = {
+export const ERRORS = {
     BAD_REQUEST : {
         key: 'BAD_REQUEST',
         message: 'Invalid Syntax or missing Parameters'
@@ -12,5 +12,9 @@ export const Error = {
     LOGIN_FAILED:{
         key: 'LOGIN_FAILED',
         message:'Invalid username or password'
+    },
+    GET_FAILED:{
+        key: 'GET_FAILED',
+        message: 'Failed to get the data'
     }
 }
